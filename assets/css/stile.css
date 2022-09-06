@@ -23,11 +23,11 @@ header {
     box-shadow: 0 3px 3px #444;
     margin-bottom: 1.5em;
     padding: 2em 1.5em;
-    position: fixed;
-    width: 98%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
     
-    
-        
+           
 }
 header div img {
     margin-bottom: 20px;
@@ -49,6 +49,8 @@ header nav li a:hover {
 }
 header nav li a::before {
     content: "\22c6\0020";
+    font-size: 25px;
+    display: inline;
 }
 
 /* MAIN */
@@ -58,19 +60,22 @@ main {
     padding: 2em 1em;
     margin-bottom:1.5em ;
     width: 100%;
-    margin-top: 250px;
+    margin-top: 30px;
 
 }
 main img {
     border: 5px solid #972F6E;
-    margin-right: 10px ;
-    padding: 5px;
+    outline: 4px solid rgb(0,160,198);
+    margin-right: 25px ;
+    padding: 8px;
     float: left;
+    
 }
 section { 
     background-color: #e3e3e3;
-    padding: 1em;
+    padding: 10px;
     margin-bottom: 2em;
+    
 }
 section h2 {
     text-align: center;
@@ -78,8 +83,16 @@ section h2 {
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 1em;
+    background-color: rgb(160, 160, 160);
+    
+    position:relative;
+    bottom: 20px;
+    right: 30px;
+    width: 100px;
+    margin-left: 30px;
+    box-shadow: 2px 2px 3px #444;
 }
+
 
 /* ELEMENTI NEL MAIN - ARTICLE */
 h1 {
@@ -148,17 +161,8 @@ tbody tr:last-of-type {
 
 /* FORM */
 
-section h2 {
-    background-color: gray;
-    margin-bottom:  20px;
-    position:relative;
-    bottom: 30px;
-    right: 30px;
-    width: 100px;
-    margin-left: 30px;
-    
 
-}
+
 input {
     padding: 5px;
     border: 0;
@@ -206,4 +210,33 @@ footer {
 }
 footer a {
     color: fuchsia;
+}
+
+.social .far {
+    position: fixed;
+    top: 300px;
+    right: 0;
+    font-size: 40px;
+    background-color:white;
+    color: #3f6bca;
+}
+
+.calendar .far {
+    position: fixed;
+    top: 350px;
+    right: 0;
+    font-size: 40px;
+    background-color:white;
+    color: #3f6bca;
+
+}
+
+.toTop .far {
+    position: fixed;
+    top: 450px;
+    right: 0;
+    font-size: 40px;
+    background-color:white;
+    color: #C385A5;
+
 }
